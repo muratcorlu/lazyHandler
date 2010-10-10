@@ -1,0 +1,1 @@
+# lazyHandler for jQuery
