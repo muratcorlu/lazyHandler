@@ -1,0 +1,1 @@
+(function(c){var b={},a,d=function(f,e,g){if(!a){a=c(document)}if(!b[f]){a.bind(f,function(j){var m=j.target,i=c(m),l=b[f],h,k;for(h in l){k=l[h];if(i.is(k.s)){k.f.call(m,j)}else{i.parents(k.s).each(function(n){k.f.call(this,j)})}}});b[f]=[]}b[f].push({f:g,s:e})};c.lh=function(e){return{click:function(f){d("click",e,f)},bind:function(f,g){d(f,e,g)}}}})(jQuery);

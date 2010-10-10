@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+		<script src="../build/lazyHandler.js"></script>
+		<script>
+			$.lh('.clicker').click(function(event) {
+				console.log('Yeah!', this, event.target);
+			});
+            $.lh('a.clicker').bind('click', function(event) {
+                console.log('Bind', this, event.target);
+            });
+		</script>
+	</head>
+	<body>
+		<a href="#click" class="clicker"><span>Click Me!</span></a>
+	</body>
+</html>
