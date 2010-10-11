@@ -49,15 +49,15 @@
             });
         };
 
-	$.lh = function(selector) {
-		return {
-			click: function(callback) {
+    $.lh = function(selector) {
+        return {
+            click: function(callback) {
                 addHandler('click', selector, callback);
-			},
+            },
             bind: function(eventType, callback) {
                 addHandler(eventType, selector, callback);
             }
-		}
-	}
-	
+        }
+    }
+
 })(jQuery);
