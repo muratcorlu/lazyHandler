@@ -41,4 +41,4 @@ lazyHandler. Only click event has a specific function. You can use others with b
 
 ## How much it cost?
 
-Build version(Obfuscated with YUI Compressor) is 363 bayt!
+Build version(Obfuscated with YUI Compressor) is 363 bytes!
