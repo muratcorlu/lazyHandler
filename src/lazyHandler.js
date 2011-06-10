@@ -20,12 +20,9 @@
                 Document.bind(eventType, function(event) {
                     var target = event.target,
                         element = $(target),
-                        eventHandlers = handlers[eventType],
-                        handlerIndex,
-                        activeHandler;
-                    for( handlerIndex in eventHandlers) {
-                        activeHandler = eventHandlers[handlerIndex];
-
+                        eventHandlers = handlers[eventType];
+                    
+                    $.each(eventHandlers, function(i, activeHandler) {
                         // Is selector matches of this element?
                         if (element.is(activeHandler.s)) {
                             activeHandler.f.call(target, event);
@@ -37,7 +34,7 @@
                                 });
                         }
 
-                    }
+                    });
                 });
 
                 handlers[eventType] = [];
