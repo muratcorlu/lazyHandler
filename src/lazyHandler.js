@@ -5,7 +5,7 @@
  *
  * Usage:
  * $.lh('.click').click(function(event) { console.log('clicked') });
- * 
+ *
  * author   Murat Corlu
  * link     http://github.com/muratcorlu/lazyHandler
  */
@@ -21,7 +21,7 @@
                     var target = event.target,
                         element = $(target),
                         eventHandlers = handlers[eventType];
-                    
+
                     $.each(eventHandlers, function(i, activeHandler) {
                         // Is selector matches of this element?
                         if (element.is(activeHandler.s)) {
